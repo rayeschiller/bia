@@ -1,54 +1,21 @@
 /**
- * TODO(wiring): mock data for screen shells only. Replace with the real
- * ContentBundle (content team) and Progress (progress/storage team).
+ * TODO(wiring): placeholder data for screens whose real data isn't built yet
+ * (future units on the path, the alphabet).
  */
-import type { Progress, Unit } from "./types";
+import type { UpcomingUnit } from "@/components/home/SkillPath";
 
-const lesson = (id: string, title: string) => ({
-  id,
-  title,
-  newItemIds: [],
-  exercises: [],
-});
-
-export const MOCK_UNITS: Unit[] = [
-  {
-    id: "greetings",
-    title: "Greetings",
-    emoji: "👋",
-    lessons: [lesson("greetings-1", "Hello & goodbye"), lesson("greetings-2", "How are you?")],
-  },
-  {
-    id: "introductions",
-    title: "Introductions",
-    emoji: "🙋",
-    lessons: [lesson("intro-1", "My name is…"), lesson("intro-2", "Where are you from?")],
-  },
-  {
-    id: "tea",
-    title: "Tea time",
-    emoji: "🫖",
-    lessons: [lesson("tea-1", "Would you like tea?"), lesson("tea-2", "Taarof")],
-  },
-  {
-    id: "family",
-    title: "Family",
-    emoji: "👨‍👩‍👧",
-    lessons: [lesson("family-1", "Mom & dad")],
-  },
-  {
-    id: "food",
-    title: "Food",
-    emoji: "🍚",
-    lessons: [lesson("food-1", "Tahdig!")],
-  },
+/**
+ * Units on the path that have no content yet. Drawn as locked placeholders
+ * after the real units. TODO(wiring): remove each one as its content lands.
+ */
+export const UPCOMING_UNITS: UpcomingUnit[] = [
+  { id: "family", title: "Family", emoji: "👨‍👩‍👧" },
+  { id: "food", title: "Food", emoji: "🍚" },
+  { id: "numbers", title: "Numbers", emoji: "🔢" },
+  { id: "at-the-table", title: "At the Table", emoji: "🫖" },
+  { id: "feelings", title: "Feelings", emoji: "💛" },
+  { id: "celebrations", title: "Celebrations", emoji: "🎉" },
 ];
-
-export const MOCK_PROGRESS: Pick<Progress, "xp" | "streak" | "completedLessons"> = {
-  xp: 340,
-  streak: 6,
-  completedLessons: ["greetings-1", "greetings-2", "intro-1"],
-};
 
 export interface MockLetter {
   fa: string;

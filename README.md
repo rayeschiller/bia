@@ -7,6 +7,7 @@ npm install
 npm run dev     # http://localhost:3000
 npm run build
 npm run lint
+npm test        # Vitest unit tests (answer checking, lesson flow, review)
 ```
 
 - Shared content/progress contract: `src/lib/types.ts` (do not edit without agreement)

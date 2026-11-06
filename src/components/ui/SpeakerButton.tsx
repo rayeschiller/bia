@@ -1,8 +1,15 @@
+"use client";
+
+import { speak } from "@/lib/audio";
 import { cn } from "@/lib/cn";
 import { SlowIcon, SpeakerIcon } from "./icons";
 
 export interface SpeakerButtonProps {
-  /** Audio is wired later; this is UI only. */
+  /** Persian text to speak via `speak()` (lib/audio). */
+  text?: string;
+  /** Playback rate for normal speed (Settings → audio speed). "slow" always uses 0.75. */
+  rate?: number;
+  /** Extra handler, called after speaking. */
   onClick?: () => void;
   /** "slow" shows the tortoise variant for 0.75x playback. */
   speed?: "normal" | "slow";
@@ -13,6 +20,8 @@ export interface SpeakerButtonProps {
 }
 
 export function SpeakerButton({
+  text,
+  rate = 1,
   onClick,
   speed = "normal",
   size = "md",
@@ -20,10 +29,14 @@ export function SpeakerButton({
   className,
 }: SpeakerButtonProps) {
   const slow = speed === "slow";
+  const handleClick = () => {
+    if (text) speak(text, { rate: slow ? 0.75 : rate });
+    onClick?.();
+  };
   return (
     <button
       type="button"
-      onClick={onClick}
+      onClick={handleClick}
       aria-label={label ?? (slow ? "Play slowly" : "Play audio")}
       className={cn(
         "inline-flex shrink-0 items-center justify-center rounded-2xl border-b-4 text-on-primary",

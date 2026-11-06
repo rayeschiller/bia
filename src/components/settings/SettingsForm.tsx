@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import type { Progress } from "@/lib/types";
+import { useProgress } from "@/lib/progress";
 import { Card } from "@/components/ui/Card";
 import { FaText } from "@/components/ui/FaText";
 import { SegmentedControl } from "@/components/ui/SegmentedControl";
 import { Switch } from "@/components/ui/Switch";
+import { ResetProgress } from "./ResetProgress";
 
 type Settings = Progress["settings"];
 
@@ -20,14 +21,13 @@ const RATE_OPTIONS = [
   { value: 0.75, label: "Slow" },
 ] as const satisfies ReadonlyArray<{ value: Settings["audioRate"]; label: string }>;
 
-/** UI-only settings. TODO(wiring): read/write Progress.settings via the progress store. */
+/** Settings bound to Progress.settings; every change is saved immediately. */
 export function SettingsForm() {
-  const [settings, setSettings] = useState<Settings>({ translit: "always", audioRate: 1, sfx: true });
-  const set = <K extends keyof Settings>(key: K, value: Settings[K]) =>
-    setSettings((s) => ({ ...s, [key]: value }));
+  const { progress, updateSettings } = useProgress();
+  const { settings } = progress;
 
   return (
-    <div className="mt-5 flex flex-col gap-4">
+    <div className="mt-5 flex flex-col gap-4 pb-6">
       <Card className="flex flex-col gap-3">
         <div>
           <h2 className="font-extrabold">Transliteration</h2>
@@ -37,7 +37,7 @@ export function SettingsForm() {
           label="Transliteration"
           options={TRANSLIT_OPTIONS}
           value={settings.translit}
-          onChange={(v) => set("translit", v)}
+          onChange={(translit) => updateSettings({ translit })}
         />
         <div className="flex justify-center rounded-tile bg-surface-2 py-2">
           <FaText fa="سلام" translit="salâm" showTranslit={settings.translit !== "off"} size="lg" />
@@ -50,7 +50,7 @@ export function SettingsForm() {
           label="Audio speed"
           options={RATE_OPTIONS}
           value={settings.audioRate}
-          onChange={(v) => set("audioRate", v)}
+          onChange={(audioRate) => updateSettings({ audioRate })}
         />
       </Card>
 
@@ -59,9 +59,11 @@ export function SettingsForm() {
           label="Sound effects"
           description="Dings and buzzes after you check an answer."
           checked={settings.sfx}
-          onChange={(v) => set("sfx", v)}
+          onChange={(sfx) => updateSettings({ sfx })}
         />
       </Card>
+
+      <ResetProgress />
     </div>
   );
 }

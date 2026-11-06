@@ -1,12 +1,13 @@
-import { LessonDemo } from "@/components/lesson/LessonDemo";
+import { notFound } from "next/navigation";
+import { LessonRoute } from "@/components/lesson/LessonRoute";
+import { getLesson, getUnits } from "@/lib/content";
+
+export function generateStaticParams() {
+  return getUnits().flatMap((u) => u.lessons.map((l) => ({ lessonId: l.id })));
+}
 
 export default async function LessonPage({ params }: PageProps<"/lesson/[lessonId]">) {
-  // TODO(wiring): load the Lesson by id from the ContentBundle and hand it to the lesson engine.
   const { lessonId } = await params;
-  return (
-    <>
-      <span className="sr-only">Lesson {lessonId}</span>
-      <LessonDemo />
-    </>
-  );
+  if (!getLesson(lessonId)) notFound();
+  return <LessonRoute lessonId={lessonId} />;
 }

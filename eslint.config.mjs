@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Plain Node content tooling, not app code.
     "scripts/**",
+    // Agent worktrees (local only).
+    ".claude/**",
   ]),
 ]);
 
