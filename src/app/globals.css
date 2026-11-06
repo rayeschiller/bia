@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+ * Bia design tokens. Raw values live on :root as CSS variables and are
+ * redefined for dark mode. Tailwind utilities (bg-primary, text-ink…)
+ * are generated from the @theme block below. See DESIGN.md.
+ * ------------------------------------------------------------------ */
+:root {
+  /* Brand */
+  --turquoise: #1aa6a6; /* Persian tile turquoise: accents, rings, focus */
+  --saffron: #f4a300; /* streaks, XP, highlights */
+
+  /* Semantic */
+  --primary: #139494; /* button fill; deeper than brand for white text contrast */
+  --primary-shadow: #0b6b6b;
+  --primary-soft: #dff3f2;
+  --on-primary: #ffffff;
+
+  --accent: var(--saffron);
+  --accent-shadow: #b87800;
+  --accent-soft: #fff0cc;
+  --on-accent: #2b2a33;
+
+  --success: #4c9a0e;
+  --success-shadow: #356d08;
+  --success-soft: #e8f6da;
+  --success-ink: #3f7a0a;
+
+  --error: #d9483a;
+  --error-shadow: #a3302a;
+  --error-soft: #ffe6e1;
+  --error-ink: #b3382a;
+
+  /* Surfaces & text */
+  --bg: #fff8ec; /* cream */
+  --surface: #ffffff;
+  --surface-2: #f6eedf;
+  --border: #e8dcc6;
+  --ink: #2b2a33;
+  --ink-muted: #6e6a78;
+  --disabled: #e9e2d4;
+  --on-disabled: #a49d8f;
+
+  --focus: var(--turquoise);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --turquoise: #2bc4c4;
+    --saffron: #f7b32b;
+
+    --primary: #2bc4c4;
+    --primary-shadow: #178c8c;
+    --primary-soft: #173a3c;
+    --on-primary: #16141f;
+
+    --accent-shadow: #b8830f;
+    --accent-soft: #3a2f17;
+    --on-accent: #16141f;
+
+    --success: #7ad13a;
+    --success-shadow: #4f9220;
+    --success-soft: #1e2a17;
+    --success-ink: #9be36a;
+
+    --error: #ff7a66;
+    --error-shadow: #c24d3e;
+    --error-soft: #33201e;
+    --error-ink: #ff9b8a;
+
+    --bg: #16141f;
+    --surface: #221f2e;
+    --surface-2: #2c2839;
+    --border: #3a3549;
+    --ink: #f5efe4;
+    --ink-muted: #a8a2b4;
+    --disabled: #2c2839;
+    --on-disabled: #6e6880;
+  }
+}
+
+@theme inline {
+  --color-turquoise: var(--turquoise);
+  --color-saffron: var(--saffron);
+  --color-primary: var(--primary);
+  --color-primary-shadow: var(--primary-shadow);
+  --color-primary-soft: var(--primary-soft);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --color-accent-shadow: var(--accent-shadow);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --color-success: var(--success);
+  --color-success-shadow: var(--success-shadow);
+  --color-success-soft: var(--success-soft);
+  --color-success-ink: var(--success-ink);
+  --color-error: var(--error);
+  --color-error-shadow: var(--error-shadow);
+  --color-error-soft: var(--error-soft);
+  --color-error-ink: var(--error-ink);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-disabled: var(--disabled);
+  --color-on-disabled: var(--on-disabled);
+
+  /* Fonts come from next/font CSS variables set on <html>. */
+  --font-sans: var(--font-latin), ui-rounded, system-ui, sans-serif;
+  --font-persian: var(--font-fa), Tahoma, sans-serif;
+
+  --radius-tile: 0.875rem;
+  --radius-card: 1.25rem;
+
+  --animate-sheet-up: sheet-up 220ms cubic-bezier(0.2, 0.9, 0.3, 1.15);
+  --animate-pop: pop 180ms ease-out;
+}
+
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.94);
+  }
+  60% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+html {
+  color-scheme: light dark;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion everywhere, including Tailwind animate-* utilities. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
