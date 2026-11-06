@@ -45,7 +45,7 @@ Every `-ink`-on-`-soft` and `ink-muted`-on-`bg` pair meets WCAG AA (4.5:1 or bet
 |---|---|---|
 | `Button` | `variant?: "primary" \| "secondary" \| "ghost" \| "success" \| "error"`, `block?: boolean` (default `true`), plus all `<button>` attributes | 3D press: a 5px bottom border collapses on `:active`. `min-h-12` (48px). Disabled renders flat and grey. |
 | `IconButton` | `label: string` (required, used as the aria-label), `icon: ReactNode`, `variant?: "plain" \| "filled"`, plus `<button>` attributes | 48×48. |
-| `SpeakerButton` | `onClick?`, `speed?: "normal" \| "slow"`, `size?: "md" \| "lg"` (48 / 80px), `label?`, `className?` | UI only; audio is wired later. |
+| `SpeakerButton` | `text?` (Persian to speak), `rate?`, `onClick?`, `speed?: "normal" \| "slow"`, `size?: "md" \| "lg"` (48 / 80px), `label?`, `className?` | Calls `speak(text)` from `lib/audio.ts` (speechSynthesis stub); `slow` plays at 0.75. |
 | `ProgressBar` | `value: number` (0..1), `label?`, `tone?: "success" \| "primary" \| "accent"`, `className?` | `role="progressbar"` with aria values. |
 | `FaText` | `fa: string`, `translit?: string`, `showTranslit?: boolean` (default `true`), `size?: "sm" \| "md" \| "lg" \| "xl" \| "2xl"`, `as?: ElementType`, `className?` | Persian is sized about 1.25× larger than Latin. Settings → "fade" is left for the lesson engine to implement, e.g. by toggling `showTranslit`. |
 | `Card` | `padded?: boolean`, plus `<div>` attributes | Surface with a resting 3D bottom edge. |
@@ -59,13 +59,24 @@ Every `-ink`-on-`-soft` and `ink-muted`-on-`bg` pair meets WCAG AA (4.5:1 or bet
 
 - `home/TopBar` (`streak`, `xp`), `home/SkillPath` (`units`, `completedLessons`), and `home/UnitNode` (`title`, `emoji`, `progress`, `state: "done" | "current" | "locked"`, `href`). Each node is a 66px pressable button inside an 88px SVG progress ring, and the path winds through offsets 0 / +56 / 0 / −56 px.
 - `lesson/LessonShell`: `progress`, `exitHref?`, `children` (exercise slot), `footer` (sticky Check button), and `overlay` (FeedbackSheet).
-- `lesson/LessonDemo` and `lesson/PlaceholderExercise`: demo only, to be replaced by the lesson engine.
+- `lesson/LessonPlayer` runs a list of exercises (re-queues wrong answers at the end, records answers, applies the translit setting) and ends on `lesson/LessonComplete` (confetti hidden under `motion-reduce`). `LessonRoute` and `ReviewSession` feed it.
+- `home/SkillPath` also takes `upcoming` (locked placeholder units without content).
+
+## Exercises (`src/components/exercises/`)
+
+`MultipleChoice`, `BuildSentence`, `MatchPairs`, `ListenChoose`, `TypeTranslit`, picked by `ExerciseView` from `exercise.type`. They all take `ExerciseProps`:
+
+- `exercise`, `seed` (stable option shuffle), `isNew` ("NEW WORD" badge), `showTranslit(itemId)`, `audioRate`.
+- The exercise owns its answer state and calls `onReadyChange(boolean)` when Check may be pressed.
+- The player calls the imperative `ref.check()`. The exercise grades itself, locks, and calls `onAnswer({correct, typo?, correctAnswer, graded})` once. `graded` maps each tested item id to correct/incorrect for `recordAnswer`.
+
+Answer checking is pure and unit-tested in `src/lib/check.ts`; run `npm test`.
 - `alphabet/LetterCard`, `settings/SettingsForm`, `nav/BottomNav`.
 
 ## Routes
 
 - `(tabs)/` holds Home, `/alphabet` and `/settings`, which share a layout with `BottomNav`.
-- `/lesson/[lessonId]` is full-screen, with no bottom nav.
+- `/lesson/[lessonId]` (lesson player) and `/lesson/review` (due-item review) are full-screen, with no bottom nav.
 - `manifest.ts`, `icon.png`, `apple-icon.png` and `public/icon-{192,512}.png` are placeholder PWA assets.
 
-Mock data lives in `src/lib/mock.ts`. Every wiring point is marked `TODO(wiring)`.
+Content comes from `src/lib/content.ts` (add a unit JSON there in one line). Progress comes from `useProgress()` in `src/lib/progress/`. Remaining placeholders (upcoming units, alphabet) live in `src/lib/mock.ts`, marked `TODO(wiring)`.
