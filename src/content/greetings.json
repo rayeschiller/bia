@@ -1,0 +1,982 @@
+{
+  "words": [
+    {
+      "id": "salam",
+      "fa": "سلام",
+      "translit": "salâm",
+      "en": "hello",
+      "alt_en": [
+        "hi"
+      ],
+      "register": "both",
+      "note": "Works with anyone, any time of day. Iranians often say it twice or follow it right away with \"chetori?\"."
+    },
+    {
+      "id": "khoda-hafez",
+      "fa": "خداحافظ",
+      "translit": "khodâhâfez",
+      "en": "goodbye",
+      "alt_en": [
+        "bye"
+      ],
+      "register": "both",
+      "note": "Literally \"God (be your) protector\". The standard goodbye; reply with the same."
+    },
+    {
+      "id": "mersi",
+      "fa": "مرسی",
+      "translit": "mersi",
+      "en": "thanks",
+      "alt_en": [
+        "thank you"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "متشکرم",
+        "translit": "motashakkeram"
+      },
+      "note": "Borrowed from French and the most common everyday thanks in Tehran."
+    },
+    {
+      "id": "mamnun",
+      "fa": "ممنون",
+      "translit": "mamnun",
+      "en": "thank you",
+      "alt_en": [
+        "thanks"
+      ],
+      "register": "both",
+      "note": "A touch warmer than \"mersi\" and fine with elders. \"Kheyli mamnun\" = thanks a lot."
+    },
+    {
+      "id": "lotfan",
+      "fa": "لطفاً",
+      "translit": "lotfan",
+      "en": "please",
+      "register": "both",
+      "note": "Goes before or after the request, like English \"please\"."
+    },
+    {
+      "id": "felan",
+      "fa": "فعلاً",
+      "translit": "fe'lan",
+      "en": "bye for now",
+      "alt_en": [
+        "see you",
+        "for now",
+        "bye"
+      ],
+      "register": "colloquial",
+      "note": "Literally \"for now\". A casual \"see ya\" between friends."
+    },
+    {
+      "id": "ghorbunet",
+      "fa": "قربونت",
+      "translit": "ghorbunet",
+      "en": "your sacrifice (lit.)",
+      "alt_en": [
+        "for you"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "قربانت",
+        "translit": "ghorbânat"
+      },
+      "note": "Only used inside affectionate set phrases like \"ghorbunet beram\".",
+      "needsNativeCheck": true
+    },
+    {
+      "id": "beram",
+      "fa": "برم",
+      "translit": "beram",
+      "en": "(that) I go",
+      "alt_en": [
+        "I go"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "بروم",
+        "translit": "beravam"
+      },
+      "note": "From \"raftan\", to go.",
+      "needsNativeCheck": true
+    },
+    {
+      "id": "chetori",
+      "fa": "چطوری",
+      "translit": "chetori",
+      "en": "how are you?",
+      "alt_en": [
+        "how are you",
+        "how's it going?"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "چطور هستید",
+        "translit": "chetor hastid"
+      },
+      "note": "Casual: for friends, siblings and people your age. With elders, use \"hâl-e shomâ chetore?\"."
+    },
+    {
+      "id": "khubam",
+      "fa": "خوبم",
+      "translit": "khubam",
+      "en": "I'm good",
+      "alt_en": [
+        "I'm fine",
+        "I'm well",
+        "fine"
+      ],
+      "register": "both",
+      "note": "\"khub\" (good) + \"-am\" (I am)."
+    },
+    {
+      "id": "halet",
+      "fa": "حالت",
+      "translit": "hâlet",
+      "en": "your state (informal)",
+      "alt_en": [
+        "your condition"
+      ],
+      "register": "colloquial",
+      "note": "\"hâl\" (state, how you're doing) + \"-et\" (your, informal)."
+    },
+    {
+      "id": "chetore",
+      "fa": "چطوره",
+      "translit": "chetore",
+      "en": "how is it?",
+      "alt_en": [
+        "how is"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "چطور است",
+        "translit": "chetor ast"
+      }
+    },
+    {
+      "id": "hal",
+      "fa": "حال",
+      "translit": "hâl",
+      "en": "state, how one is doing",
+      "alt_en": [
+        "condition",
+        "health"
+      ],
+      "register": "both"
+    },
+    {
+      "id": "shoma",
+      "fa": "شما",
+      "translit": "shomâ",
+      "en": "you (polite)",
+      "alt_en": [
+        "you",
+        "you (plural)"
+      ],
+      "register": "both",
+      "note": "The respectful \"you\" for elders, in-laws and strangers; also plural \"you all\"."
+    },
+    {
+      "id": "to",
+      "fa": "تو",
+      "translit": "to",
+      "en": "you (informal)",
+      "alt_en": [
+        "you"
+      ],
+      "register": "both",
+      "note": "For friends, family your age, kids. Using it with an elder can sound rude."
+    },
+    {
+      "id": "chi",
+      "fa": "چی",
+      "translit": "chi",
+      "en": "what",
+      "alt_en": [
+        "what?"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "چه",
+        "translit": "che"
+      }
+    },
+    {
+      "id": "bad",
+      "fa": "بد",
+      "translit": "bad",
+      "en": "bad",
+      "register": "both"
+    },
+    {
+      "id": "nistam",
+      "fa": "نیستم",
+      "translit": "nistam",
+      "en": "I'm not",
+      "alt_en": [
+        "I am not"
+      ],
+      "register": "both"
+    },
+    {
+      "id": "esmet",
+      "fa": "اسمت",
+      "translit": "esmet",
+      "en": "your name (informal)",
+      "alt_en": [
+        "your name"
+      ],
+      "register": "colloquial",
+      "note": "\"esm\" (name) + \"-et\" (your)."
+    },
+    {
+      "id": "chiye",
+      "fa": "چیه",
+      "translit": "chiye",
+      "en": "what is it?",
+      "alt_en": [
+        "what is"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "چیست",
+        "translit": "chist"
+      }
+    },
+    {
+      "id": "esmam",
+      "fa": "اسمم",
+      "translit": "esmam",
+      "en": "my name",
+      "register": "both",
+      "note": "\"esm\" (name) + \"-am\" (my)."
+    },
+    {
+      "id": "maryame",
+      "fa": "مریمه",
+      "translit": "maryame",
+      "en": "is Maryam",
+      "alt_en": [
+        "Maryam is"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "مریم است",
+        "translit": "maryam ast"
+      },
+      "note": "Maryam + \"-e\" (is). Put your own name in its place.",
+      "needsNativeCheck": true
+    },
+    {
+      "id": "khoshbakhtam",
+      "fa": "خوشبختم",
+      "translit": "khoshbakhtam",
+      "en": "nice to meet you",
+      "alt_en": [
+        "pleased to meet you",
+        "nice meeting you"
+      ],
+      "register": "both",
+      "note": "Literally \"I'm fortunate\". The other person usually answers \"manam hamintor\" (likewise)."
+    },
+    {
+      "id": "khosh",
+      "fa": "خوش",
+      "translit": "khosh",
+      "en": "pleasant, happy",
+      "alt_en": [
+        "good",
+        "happy"
+      ],
+      "register": "both"
+    },
+    {
+      "id": "umadi",
+      "fa": "اومدی",
+      "translit": "umadi",
+      "en": "you came",
+      "register": "colloquial",
+      "formal": {
+        "fa": "آمدی",
+        "translit": "âmadi"
+      },
+      "note": "Colloquial \"â\" often becomes \"u\" before m/n: âmadi -> umadi."
+    },
+    {
+      "id": "sobh",
+      "fa": "صبح",
+      "translit": "sobh",
+      "en": "morning",
+      "register": "both"
+    },
+    {
+      "id": "shab",
+      "fa": "شب",
+      "translit": "shab",
+      "en": "night",
+      "alt_en": [
+        "evening"
+      ],
+      "register": "both"
+    },
+    {
+      "id": "bekheyr",
+      "fa": "بخیر",
+      "translit": "bekheyr",
+      "en": "(be) good",
+      "alt_en": [
+        "well",
+        "good"
+      ],
+      "register": "both",
+      "note": "Literally \"with goodness\"; used in greetings like \"sobh bekheyr\"."
+    },
+    {
+      "id": "are",
+      "fa": "آره",
+      "translit": "âre",
+      "en": "yeah",
+      "alt_en": [
+        "yes"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "بله",
+        "translit": "bale"
+      },
+      "note": "Everyday \"yes\" with friends and family."
+    },
+    {
+      "id": "bale",
+      "fa": "بله",
+      "translit": "bale",
+      "en": "yes",
+      "alt_en": [
+        "yes (polite)"
+      ],
+      "register": "both",
+      "note": "The polite \"yes\". Also how many people answer the phone, and a polite \"pardon?\"."
+    },
+    {
+      "id": "na",
+      "fa": "نه",
+      "translit": "na",
+      "en": "no",
+      "alt_en": [
+        "nope"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "خیر",
+        "translit": "kheyr"
+      },
+      "note": "Written نه but said \"na\"."
+    }
+  ],
+  "phrases": [
+    {
+      "id": "ghorbunet-beram",
+      "fa": "قربونت برم",
+      "translit": "ghorbunet beram",
+      "en": "thank you, dear",
+      "alt_en": [
+        "thanks, dear",
+        "bye, dear",
+        "may I be sacrificed for you"
+      ],
+      "wordIds": [
+        "ghorbunet",
+        "beram"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "قربانت بروم",
+        "translit": "ghorbânat beravam"
+      },
+      "note": "Literally \"may I be sacrificed for you\". A warm, affectionate thanks or goodbye, used a lot with family and close friends (and by shopkeepers being sweet)."
+    },
+    {
+      "id": "halet-chetore",
+      "fa": "حالت چطوره؟",
+      "translit": "hâlet chetore",
+      "en": "how are you doing?",
+      "alt_en": [
+        "how are you?",
+        "how's it going?",
+        "how are you"
+      ],
+      "wordIds": [
+        "halet",
+        "chetore"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "حالتان چطور است؟",
+        "translit": "hâletân chetor ast"
+      },
+      "note": "Friendly and informal, a little warmer than \"chetori?\"."
+    },
+    {
+      "id": "hal-e-shoma-chetore",
+      "fa": "حال شما چطوره؟",
+      "translit": "hâl-e shomâ chetore",
+      "en": "how are you? (polite)",
+      "alt_en": [
+        "how are you?",
+        "how are you"
+      ],
+      "wordIds": [
+        "hal",
+        "shoma",
+        "chetore"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "حال شما چطور است؟",
+        "translit": "hâl-e shomâ chetor ast"
+      },
+      "note": "The respectful version for elders, in-laws and new people. Perfect for family dinners."
+    },
+    {
+      "id": "mersi-khubam",
+      "fa": "مرسی، خوبم",
+      "translit": "mersi khubam",
+      "en": "thanks, I'm good",
+      "alt_en": [
+        "I'm good, thanks",
+        "thanks, I'm fine",
+        "fine, thanks"
+      ],
+      "wordIds": [
+        "mersi",
+        "khubam"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "متشکرم، خوبم",
+        "translit": "motashakkeram khubam"
+      }
+    },
+    {
+      "id": "bad-nistam",
+      "fa": "بد نیستم",
+      "translit": "bad nistam",
+      "en": "not bad",
+      "alt_en": [
+        "I'm not bad"
+      ],
+      "wordIds": [
+        "bad",
+        "nistam"
+      ],
+      "register": "both"
+    },
+    {
+      "id": "to-chi",
+      "fa": "تو چی؟",
+      "translit": "to chi",
+      "en": "and you?",
+      "alt_en": [
+        "what about you?",
+        "how about you?",
+        "and you"
+      ],
+      "wordIds": [
+        "to",
+        "chi"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "و شما؟",
+        "translit": "va shomâ"
+      },
+      "note": "Literally \"you what?\". With elders, swap in \"shomâ chi?\"."
+    },
+    {
+      "id": "esmet-chiye",
+      "fa": "اسمت چیه؟",
+      "translit": "esmet chiye",
+      "en": "what's your name?",
+      "alt_en": [
+        "what is your name?",
+        "what's your name"
+      ],
+      "wordIds": [
+        "esmet",
+        "chiye"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "اسم شما چیست؟",
+        "translit": "esm-e shomâ chist"
+      },
+      "note": "Casual. Politely: \"esmetun chiye?\"."
+    },
+    {
+      "id": "esmam-maryame",
+      "fa": "اسمم مریمه",
+      "translit": "esmam maryame",
+      "en": "my name is Maryam",
+      "alt_en": [
+        "I'm Maryam",
+        "my name's Maryam"
+      ],
+      "wordIds": [
+        "esmam",
+        "maryame"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "اسم من مریم است",
+        "translit": "esm-e man maryam ast"
+      },
+      "note": "Swap in your own name + \"-e\". After a name ending in a vowel it changes, e.g. \"esmam sârâst\".",
+      "needsNativeCheck": true
+    },
+    {
+      "id": "khosh-umadi",
+      "fa": "خوش اومدی",
+      "translit": "khosh umadi",
+      "en": "welcome",
+      "alt_en": [
+        "welcome!",
+        "glad you came"
+      ],
+      "wordIds": [
+        "khosh",
+        "umadi"
+      ],
+      "register": "colloquial",
+      "formal": {
+        "fa": "خوش آمدید",
+        "translit": "khosh âmadid"
+      },
+      "note": "Said when someone arrives, not a reply to \"thanks\". To a group or an elder: \"khosh umadin\". Expect a round of ta'ârof (polite back-and-forth) after it."
+    },
+    {
+      "id": "sobh-bekheyr",
+      "fa": "صبح بخیر",
+      "translit": "sobh bekheyr",
+      "en": "good morning",
+      "wordIds": [
+        "sobh",
+        "bekheyr"
+      ],
+      "register": "both"
+    },
+    {
+      "id": "shab-bekheyr",
+      "fa": "شب بخیر",
+      "translit": "shab bekheyr",
+      "en": "good night",
+      "wordIds": [
+        "shab",
+        "bekheyr"
+      ],
+      "register": "both",
+      "note": "Said when leaving at night or going to bed, not as a hello."
+    }
+  ],
+  "units": [
+    {
+      "id": "greetings",
+      "title": "Greetings",
+      "emoji": "👋",
+      "lessons": [
+        {
+          "id": "greetings-1",
+          "title": "Hello & goodbye",
+          "newItemIds": [
+            "salam",
+            "khoda-hafez",
+            "mersi",
+            "mamnun",
+            "lotfan",
+            "felan",
+            "ghorbunet-beram"
+          ],
+          "exercises": [
+            {
+              "id": "greetings-1-ex-01",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "salam",
+              "distractorIds": [
+                "mersi",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-02",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "khoda-hafez",
+              "distractorIds": [
+                "salam",
+                "lotfan"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-03",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "mersi",
+              "distractorIds": [
+                "salam",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-04",
+              "type": "listen_choose",
+              "itemId": "salam",
+              "distractorIds": [
+                "mersi",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-05",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "mamnun",
+              "distractorIds": [
+                "khoda-hafez",
+                "salam"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-06",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "lotfan",
+              "distractorIds": [
+                "mersi",
+                "salam"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-07",
+              "type": "type_translit",
+              "direction": "en_to_fa",
+              "itemId": "salam"
+            },
+            {
+              "id": "greetings-1-ex-08",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "felan",
+              "distractorIds": [
+                "salam",
+                "lotfan"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-09",
+              "type": "match_pairs",
+              "pairIds": [
+                "salam",
+                "khoda-hafez",
+                "mersi",
+                "lotfan"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-10",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "ghorbunet-beram",
+              "distractorIds": [
+                "salam",
+                "lotfan"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-11",
+              "type": "build_sentence",
+              "direction": "en_to_fa",
+              "itemId": "ghorbunet-beram",
+              "distractorIds": [
+                "salam",
+                "mersi"
+              ]
+            },
+            {
+              "id": "greetings-1-ex-12",
+              "type": "type_translit",
+              "direction": "en_to_fa",
+              "itemId": "khoda-hafez"
+            }
+          ]
+        },
+        {
+          "id": "greetings-2",
+          "title": "How are you?",
+          "newItemIds": [
+            "chetori",
+            "khubam",
+            "mersi-khubam",
+            "bad-nistam",
+            "to-chi",
+            "halet-chetore",
+            "hal-e-shoma-chetore"
+          ],
+          "exercises": [
+            {
+              "id": "greetings-2-ex-01",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "chetori",
+              "distractorIds": [
+                "salam",
+                "mersi"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-02",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "khubam",
+              "distractorIds": [
+                "chetori",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-03",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "mersi-khubam",
+              "distractorIds": [
+                "chetori",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-04",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "bad-nistam",
+              "distractorIds": [
+                "khubam",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-05",
+              "type": "listen_choose",
+              "itemId": "chetori",
+              "distractorIds": [
+                "khubam",
+                "mersi"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-06",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "to-chi",
+              "distractorIds": [
+                "chetori",
+                "bad-nistam"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-07",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "halet-chetore",
+              "distractorIds": [
+                "to-chi",
+                "khubam"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-08",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "hal-e-shoma-chetore",
+              "distractorIds": [
+                "mersi-khubam",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-09",
+              "type": "match_pairs",
+              "pairIds": [
+                "salam",
+                "chetori",
+                "khubam",
+                "mersi",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-10",
+              "type": "build_sentence",
+              "direction": "en_to_fa",
+              "itemId": "mersi-khubam",
+              "distractorIds": [
+                "chetori",
+                "salam"
+              ]
+            },
+            {
+              "id": "greetings-2-ex-11",
+              "type": "type_translit",
+              "direction": "en_to_fa",
+              "itemId": "chetori"
+            },
+            {
+              "id": "greetings-2-ex-12",
+              "type": "build_sentence",
+              "direction": "en_to_fa",
+              "itemId": "hal-e-shoma-chetore",
+              "distractorIds": [
+                "halet",
+                "chi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "greetings-3",
+          "title": "Nice to meet you",
+          "newItemIds": [
+            "esmet-chiye",
+            "esmam-maryame",
+            "khoshbakhtam",
+            "khosh-umadi",
+            "sobh-bekheyr",
+            "shab-bekheyr",
+            "are",
+            "na",
+            "bale"
+          ],
+          "exercises": [
+            {
+              "id": "greetings-3-ex-01",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "esmet-chiye",
+              "distractorIds": [
+                "chetori",
+                "to-chi"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-02",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "esmam-maryame",
+              "distractorIds": [
+                "khubam",
+                "esmet-chiye"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-03",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "khoshbakhtam",
+              "distractorIds": [
+                "khubam",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-04",
+              "type": "build_sentence",
+              "direction": "en_to_fa",
+              "itemId": "esmet-chiye",
+              "distractorIds": [
+                "esmam",
+                "chi"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-05",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "khosh-umadi",
+              "distractorIds": [
+                "khoshbakhtam",
+                "khoda-hafez"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-06",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "sobh-bekheyr",
+              "distractorIds": [
+                "shab-bekheyr",
+                "salam"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-07",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "shab-bekheyr",
+              "distractorIds": [
+                "sobh-bekheyr",
+                "khosh-umadi"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-08",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "are",
+              "distractorIds": [
+                "na",
+                "mersi"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-09",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "na",
+              "distractorIds": [
+                "are",
+                "lotfan"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-10",
+              "type": "multiple_choice",
+              "direction": "fa_to_en",
+              "itemId": "bale",
+              "distractorIds": [
+                "na",
+                "lotfan"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-11",
+              "type": "match_pairs",
+              "pairIds": [
+                "are",
+                "na",
+                "khoshbakhtam",
+                "lotfan",
+                "salam"
+              ]
+            },
+            {
+              "id": "greetings-3-ex-12",
+              "type": "type_translit",
+              "direction": "en_to_fa",
+              "itemId": "khoshbakhtam"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
