@@ -1,8 +1,8 @@
 /**
  * TODO(wiring): mock data for screen shells only. Replace with the real
- * ContentBundle (content team) and Progress (progress/storage team).
+ * ContentBundle (content team).
  */
-import type { Progress, Unit } from "./types";
+import type { Unit } from "./types";
 
 const lesson = (id: string, title: string) => ({
   id,
@@ -43,12 +43,6 @@ export const MOCK_UNITS: Unit[] = [
     lessons: [lesson("food-1", "Tahdig!")],
   },
 ];
-
-export const MOCK_PROGRESS: Pick<Progress, "xp" | "streak" | "completedLessons"> = {
-  xp: 340,
-  streak: 6,
-  completedLessons: ["greetings-1", "greetings-2", "intro-1"],
-};
 
 export interface MockLetter {
   fa: string;
