@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:content": "node scripts/validate-content.js src/content/greetings.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate:content": "node scripts/validate-content.js src/content/greetings.json"
   },
   "dependencies": {
     "next": "16.4.5",
