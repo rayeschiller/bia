@@ -26,11 +26,11 @@ const faSizes: Record<FaTextSize, string> = {
 };
 
 const translitSizes: Record<FaTextSize, string> = {
-  sm: "text-xs",
-  md: "text-sm",
-  lg: "text-base",
-  xl: "text-lg",
-  "2xl": "text-xl",
+  sm: "text-sm",
+  md: "text-base",
+  lg: "text-lg",
+  xl: "text-xl",
+  "2xl": "text-2xl",
 };
 
 /**
@@ -57,7 +57,7 @@ export function FaText({
         {fa}
       </bdi>
       {withTranslit && (
-        <span dir="ltr" lang="fa-Latn" className={cn("text-ink-muted italic", translitSizes[size])}>
+        <span dir="ltr" lang="fa-Latn" className={cn("font-bold text-ink", translitSizes[size])}>
           {translit}
         </span>
       )}

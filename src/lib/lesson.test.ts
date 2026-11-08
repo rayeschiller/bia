@@ -8,7 +8,6 @@ import {
   newItemExerciseIds,
   runProgress,
   startRun,
-  translitVisible,
 } from "./lesson";
 import type { Exercise } from "./types";
 
@@ -49,18 +48,6 @@ describe("lessonXp", () => {
     expect(lessonXp(0)).toBe(10);
     expect(lessonXp(7)).toBe(17);
     expect(lessonXp(12)).toBe(20);
-  });
-});
-
-describe("translitVisible", () => {
-  const review = { salam: { strength: 1, due: "2026-01-01", seen: 3, missed: 0 } };
-  it("follows always / off", () => {
-    expect(translitVisible("always", review, "salam")).toBe(true);
-    expect(translitVisible("off", {}, "salam")).toBe(false);
-  });
-  it("fades after 3 sightings", () => {
-    expect(translitVisible("fade", review, "salam")).toBe(false);
-    expect(translitVisible("fade", review, "mersi")).toBe(true);
   });
 });
 

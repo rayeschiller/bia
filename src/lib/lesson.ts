@@ -1,4 +1,4 @@
-import type { Exercise, Lesson, Progress } from "./types";
+import type { Exercise, Lesson } from "./types";
 
 /** A lesson in progress: a queue that grows when an answer is wrong. */
 export interface LessonRun {
@@ -49,17 +49,6 @@ export function lessonXp(firstTryCorrectCount: number): number {
 /** First-try accuracy as a whole percentage. */
 export function accuracyPct(run: LessonRun): number {
   return run.total ? Math.round((firstTryCorrect(run) / run.total) * 100) : 0;
-}
-
-/** Settings → Transliteration: "fade" keeps it only for items seen fewer than 3 times. */
-export function translitVisible(
-  setting: Progress["settings"]["translit"],
-  review: Progress["review"],
-  itemId: string,
-): boolean {
-  if (setting === "always") return true;
-  if (setting === "off") return false;
-  return (review[itemId]?.seen ?? 0) < 3;
 }
 
 /**

@@ -44,7 +44,7 @@ export function ListenChoose({ exercise, showTranslit, isNew, seed, audioRate = 
             onClick={checked ? undefined : () => pick(o.id)}
             className="min-h-20"
           >
-            <FaText fa={o.fa} translit={o.translit} showTranslit={checked && showTranslit(o.id)} size="md" />
+            <FaText fa={o.fa} translit={o.translit} showTranslit={showTranslit(o.id)} size="md" />
           </OptionCard>
         ))}
       </div>

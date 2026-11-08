@@ -53,7 +53,7 @@ export function Tile({
         {fa}
       </bdi>
       {translit && showTranslit && (
-        <span dir="ltr" className={cn("text-xs", disabled ? "text-transparent" : "text-ink-muted")}>
+        <span dir="ltr" className={cn("text-sm font-bold", disabled ? "text-transparent" : "text-ink")}>
           {translit}
         </span>
       )}
