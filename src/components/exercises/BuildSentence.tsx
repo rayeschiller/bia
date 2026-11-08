@@ -42,13 +42,13 @@ export function BuildSentence({ exercise, showTranslit, isNew, seed, onReadyChan
 
   return (
     <div className="flex flex-1 flex-col gap-6">
-      <ExerciseHeader title="Write this in Persian" isNew={isNew} />
+      <ExerciseHeader title="Build this in Farsi" isNew={isNew} />
 
       <p className="rounded-card border-2 border-border bg-surface px-4 py-3 text-lg font-bold">{phrase.en}</p>
 
+      {/* Left-to-right so the Finglish reads in order as you tap. */}
       <div
-        dir="rtl"
-        lang="fa"
+        dir="ltr"
         aria-label="Your answer"
         className="flex min-h-[7.5rem] flex-wrap content-start gap-2 border-y-2 border-border py-3"
       >
@@ -64,7 +64,7 @@ export function BuildSentence({ exercise, showTranslit, isNew, seed, onReadyChan
         ))}
       </div>
 
-      <div dir="rtl" lang="fa" aria-label="Word bank" className="flex flex-wrap justify-center gap-2">
+      <div dir="ltr" aria-label="Word bank" className="flex flex-wrap justify-center gap-2">
         {bank.map((w, slot) => (
           <Tile
             key={slot}

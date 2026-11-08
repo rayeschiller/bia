@@ -13,10 +13,9 @@ import {
   lessonXp,
   runProgress,
   startRun,
-  translitVisible,
 } from "@/lib/lesson";
 import { useProgress } from "@/lib/progress";
-import type { Exercise, Progress } from "@/lib/types";
+import type { Exercise } from "@/lib/types";
 import { LessonComplete } from "./LessonComplete";
 import { LessonShell } from "./LessonShell";
 
@@ -42,8 +41,6 @@ export function LessonPlayer({ title, exercises, newExerciseIds, onComplete }: L
   const [run, dispatch] = useReducer(lessonReducer, exercises, startRun);
   const [ready, setReady] = useState(false);
   const [result, setResult] = useState<ExerciseResult | null>(null);
-  // Review counts frozen at check time so translit doesn't flicker under the feedback sheet.
-  const [frozenReview, setFrozenReview] = useState<Progress["review"] | null>(null);
   const exerciseRef = useRef<ExerciseHandle>(null);
 
   if (isFinished(run)) {
@@ -61,10 +58,8 @@ export function LessonPlayer({ title, exercises, newExerciseIds, onComplete }: L
 
   const exercise = run.queue[run.pos];
   const retry = run.pos >= run.total;
-  const review = frozenReview ?? progress.review;
 
   const handleAnswer = (r: ExerciseResult) => {
-    setFrozenReview(progress.review);
     for (const [itemId, ok] of Object.entries(r.graded)) recordAnswer(itemId, ok);
     dispatch({ type: "answer", correct: r.correct });
     setResult(r);
@@ -76,7 +71,6 @@ export function LessonPlayer({ title, exercises, newExerciseIds, onComplete }: L
     dispatch({ type: "next" });
     setResult(null);
     setReady(false);
-    setFrozenReview(null);
   };
 
   const praise = PRAISE[(run.pos + run.done.length) % PRAISE.length];
@@ -110,7 +104,7 @@ export function LessonPlayer({ title, exercises, newExerciseIds, onComplete }: L
         exercise={exercise}
         seed={retry ? `${exercise.id}:${run.pos}` : exercise.id}
         isNew={!retry && newExerciseIds?.has(exercise.id)}
-        showTranslit={(id) => translitVisible(progress.settings.translit, review, id)}
+        showTranslit={() => true}
         audioRate={progress.settings.audioRate}
         onReadyChange={setReady}
         onAnswer={handleAnswer}
