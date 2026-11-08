@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Nunito, Vazirmatn } from "next/font/google";
+import { AccountProvider } from "@/lib/account";
 import { ProgressProvider } from "@/lib/progress";
 import "./globals.css";
 
@@ -44,7 +45,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${latin.variable} ${fa.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
-        <ProgressProvider>{children}</ProgressProvider>
+        <ProgressProvider>
+          <AccountProvider>{children}</AccountProvider>
+        </ProgressProvider>
       </body>
     </html>
   );

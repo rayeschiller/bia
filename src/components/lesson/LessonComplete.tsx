@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { FaText } from "@/components/ui/FaText";
+import { SaveProgressNudge } from "./SaveProgressNudge";
 
 export interface LessonCompleteProps {
   title: string;
@@ -69,6 +70,8 @@ export function LessonComplete({ title, xp, accuracy, heading = "Lesson complete
             </span>
           </Card>
         </div>
+
+        {xp !== undefined && <SaveProgressNudge />}
       </div>
 
       <Button onClick={onContinue} autoFocus>
