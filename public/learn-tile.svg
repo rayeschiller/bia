@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="88" viewBox="0 0 80 88">
+  <defs>
+    <path id="star" d="M0-22 7-15 15-15 15-7 22 0 15 7 15 15 7 15 0 22-7 15-15 15-15 7-22 0-15-7-15-15-7-15Z"/>
+  </defs>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round">
+    <use href="#star" x="56" y="44"/>
+    <use href="#star" x="78" y="22"/>
+    <use href="#star" x="78" y="66"/>
+    <path d="M34 44 23 33 12 44 23 55ZM56 22 45 11 56 0 67 11ZM56 66 45 77 56 88 67 77Z"/>
+  </g>
+  <path fill="#d53551" d="M56 33 59 41 67 44 59 47 56 55 53 47 45 44 53 41Z"/>
+  <path fill="#bad5ff" d="M23 39 28 44 23 49 18 44ZM56 7 60 11 56 15 52 11ZM56 73 60 77 56 81 52 77Z"/>
+</svg>

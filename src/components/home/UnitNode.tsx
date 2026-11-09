@@ -41,7 +41,14 @@ export function UnitNode({ title, emoji, progress, state, href }: UnitNodeProps)
     <div className="flex flex-col items-center gap-1">
       <div className="relative" style={{ width: SIZE, height: SIZE }}>
         <svg width={SIZE} height={SIZE} className="absolute inset-0 -rotate-90" aria-hidden>
-          <circle cx={SIZE / 2} cy={SIZE / 2} r={R} fill="none" strokeWidth={STROKE} className="stroke-disabled" />
+          <circle
+            cx={SIZE / 2}
+            cy={SIZE / 2}
+            r={R}
+            fill="none"
+            strokeWidth={STROKE}
+            className={state === "current" ? "stroke-primary-soft" : "stroke-disabled"}
+          />
           {!locked && (
             <circle
               cx={SIZE / 2}
@@ -52,7 +59,7 @@ export function UnitNode({ title, emoji, progress, state, href }: UnitNodeProps)
               strokeLinecap="round"
               strokeDasharray={C}
               strokeDashoffset={C * (1 - progress)}
-              className={state === "done" ? "stroke-saffron" : "stroke-turquoise"}
+              className={state === "done" ? "stroke-saffron" : "stroke-primary"}
             />
           )}
         </svg>
