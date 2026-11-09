@@ -1,38 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { Avatar } from "@/components/account/Avatar";
 import { GoogleButton } from "@/components/account/GoogleButton";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { useAccount, type AccountApi } from "@/lib/account";
-import type { AccountUser } from "@/lib/account/types";
 
 const SHOW_COMING_SOON = process.env.NODE_ENV === "development";
-
-function Avatar({ user }: { user: AccountUser }) {
-  const [broken, setBroken] = useState(false);
-  const initial = (user.name || user.email || "?").trim().charAt(0).toUpperCase();
-  if (user.image && !broken) {
-    return (
-      // eslint-disable-next-line @next/next/no-img-element -- tiny remote avatar; no image optimisation needed
-      <img
-        src={user.image}
-        alt=""
-        referrerPolicy="no-referrer"
-        onError={() => setBroken(true)}
-        className="size-12 shrink-0 rounded-full border-2 border-border object-cover"
-      />
-    );
-  }
-  return (
-    <span
-      aria-hidden
-      className="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-xl font-black text-on-primary"
-    >
-      {initial}
-    </span>
-  );
-}
 
 function syncLabel(sync: AccountApi["sync"]) {
   if (sync === "synced") return { text: "Progress synced ✓", className: "text-success-ink" };

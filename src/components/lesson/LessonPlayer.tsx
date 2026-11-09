@@ -15,6 +15,7 @@ import {
   startRun,
 } from "@/lib/lesson";
 import { useProgress } from "@/lib/progress";
+import { playComplete, playCorrect, playWrong } from "@/lib/sfx";
 import type { Exercise } from "@/lib/types";
 import { LessonComplete } from "./LessonComplete";
 import { LessonShell } from "./LessonShell";
@@ -60,6 +61,7 @@ export function LessonPlayer({ title, exercises, newExerciseIds, onComplete }: L
   const retry = run.pos >= run.total;
 
   const handleAnswer = (r: ExerciseResult) => {
+    if (progress.settings.sfx) (r.correct ? playCorrect : playWrong)();
     for (const [itemId, ok] of Object.entries(r.graded)) recordAnswer(itemId, ok);
     dispatch({ type: "answer", correct: r.correct });
     setResult(r);
@@ -67,7 +69,10 @@ export function LessonPlayer({ title, exercises, newExerciseIds, onComplete }: L
 
   const handleContinue = () => {
     const finishing = run.pos + 1 >= run.queue.length && result?.correct;
-    if (finishing) onComplete?.(lessonXp(firstTryCorrect(run)));
+    if (finishing) {
+      if (progress.settings.sfx) playComplete();
+      onComplete?.(lessonXp(firstTryCorrect(run)));
+    }
     dispatch({ type: "next" });
     setResult(null);
     setReady(false);

@@ -1,3 +1,4 @@
+import { AccountChip } from "@/components/account/AccountChip";
 import { cn } from "@/lib/cn";
 
 export interface TopBarProps {
@@ -6,7 +7,7 @@ export interface TopBarProps {
   xp: number;
 }
 
-/** Sticky stats bar for Home: app name, streak, XP. The flame greys out at 0. */
+/** Sticky stats bar for Home: app name, streak, XP, and sign-in / account. The flame greys out at 0. */
 export function TopBar({ streak, xp }: TopBarProps) {
   const lit = streak > 0;
   return (
@@ -39,6 +40,7 @@ export function TopBar({ streak, xp }: TopBarProps) {
           <span aria-hidden>⭐</span>
           {xp}
         </span>
+        <AccountChip />
       </div>
     </header>
   );
