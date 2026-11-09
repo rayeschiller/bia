@@ -32,6 +32,13 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
 const getServerSnapshot = () => SERVER_SNAPSHOT;
 
+/** The underlying store (for cloud sync). */
+export function useProgressStore(): ProgressStore {
+  const store = useContext(StoreContext);
+  if (!store) throw new Error("useProgressStore() must be used inside <ProgressProvider>");
+  return store;
+}
+
 export function useProgress(): ProgressApi {
   const store = useContext(StoreContext);
   if (!store) throw new Error("useProgress() must be used inside <ProgressProvider>");

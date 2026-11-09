@@ -12,8 +12,10 @@
     "validate:content": "node scripts/validate-content.js src/content/greetings.json"
   },
   "dependencies": {
+    "@upstash/redis": "^1.41.0",
     "msedge-tts": "^2.1.1",
     "next": "16.4.5",
+    "next-auth": "^5.0.0-beta.32",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
