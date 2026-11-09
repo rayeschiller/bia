@@ -16,7 +16,7 @@ export interface LessonCompleteProps {
   onContinue: () => void;
 }
 
-const COLORS = ["bg-turquoise", "bg-saffron", "bg-success", "bg-error", "bg-primary"];
+const COLORS = ["bg-primary-soft", "bg-saffron", "bg-success", "bg-error", "bg-primary"];
 // Fixed confetti layout (no Math.random) so server and client render alike.
 const PIECES = Array.from({ length: 18 }, (_, i) => ({
   color: COLORS[i % COLORS.length],

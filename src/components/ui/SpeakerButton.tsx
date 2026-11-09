@@ -41,7 +41,7 @@ export function SpeakerButton({
       className={cn(
         "inline-flex shrink-0 items-center justify-center rounded-2xl border-b-4 text-on-primary",
         "transition-[transform,border-width] duration-75 active:translate-y-[2px] active:border-b-2",
-        slow ? "bg-turquoise/80 border-primary-shadow" : "bg-primary border-primary-shadow",
+        slow ? "bg-primary/90 border-primary-shadow" : "bg-primary border-primary-shadow",
         size === "lg" ? "size-20" : "size-12",
         className,
       )}

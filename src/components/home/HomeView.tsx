@@ -21,8 +21,8 @@ export function HomeView() {
   return (
     <>
       <TopBar streak={currentStreak(progress, todayLocal())} xp={progress.xp} />
-      <main className="learn-screen px-4">
-        <section className="learn-unit-banner mt-4 rounded-card bg-primary px-4 py-3 text-on-primary">
+      <main className="px-4">
+        <section className="learn-unit-banner mt-4 rounded-card bg-primary px-4 py-3 text-on-primary dark:bg-[#1646a0] dark:text-white">
           <p className="text-xs font-extrabold tracking-wider uppercase opacity-80">Unit {currentIndex + 1}</p>
           <h1 className="text-xl font-black">{current.title}</h1>
           <p className="text-sm font-bold opacity-90">
