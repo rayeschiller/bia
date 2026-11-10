@@ -9,7 +9,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:content": "node scripts/validate-content.js src/content/greetings.json"
+    "validate:content": "node scripts/validate-content.js src/content/greetings.json && node scripts/validate-content.js src/content/everyday-farsi.json"
   },
   "dependencies": {
     "@upstash/redis": "^1.41.0",

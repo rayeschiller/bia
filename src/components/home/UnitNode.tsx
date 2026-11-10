@@ -1,15 +1,14 @@
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 import { LockIcon } from "@/components/ui/icons";
-
-export type UnitNodeState = "done" | "current" | "locked";
+import type { UnitState } from "@/lib/lesson";
 
 export interface UnitNodeProps {
   title: string;
   emoji: string;
   /** 0..1 fraction of lessons complete. */
   progress: number;
-  state: UnitNodeState;
+  state: UnitState;
   /** Where tapping goes (next lesson). Ignored when locked. */
   href: string;
 }

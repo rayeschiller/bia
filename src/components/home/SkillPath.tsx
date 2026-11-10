@@ -1,32 +1,20 @@
 import type { Unit } from "@/lib/types";
-import { UnitNode, type UnitNodeState } from "./UnitNode";
-
-/** A unit that has no content yet; always drawn locked at the end of the path. */
-export interface UpcomingUnit {
-  id: string;
-  title: string;
-  emoji: string;
-}
+import { firstIncompleteUnit, unitState } from "@/lib/lesson";
+import { UnitNode } from "./UnitNode";
 
 export interface SkillPathProps {
   units: Unit[];
   completedLessons: string[];
-  upcoming?: UpcomingUnit[];
 }
 
 // Horizontal offsets (px) for the winding effect; repeats every 4 nodes.
 // Max 64px each side keeps an 88px node inside a 343px (375 - gutters) column.
 const OFFSETS = [0, 56, 0, -56];
 
-function unitState(unit: Unit, done: Set<string>, isFirstIncomplete: boolean): UnitNodeState {
-  if (unit.lessons.every((l) => done.has(l.id))) return "done";
-  return isFirstIncomplete ? "current" : "locked";
-}
-
 /** Vertical winding path of unit nodes. The current node links to its next incomplete lesson. */
-export function SkillPath({ units, completedLessons, upcoming = [] }: SkillPathProps) {
+export function SkillPath({ units, completedLessons }: SkillPathProps) {
   const done = new Set(completedLessons);
-  const firstIncomplete = units.findIndex((u) => u.lessons.some((l) => !done.has(l.id)));
+  const firstIncomplete = firstIncompleteUnit(units, done);
   const offset = (i: number) => ({ transform: `translateX(${OFFSETS[i % OFFSETS.length]}px)` });
 
   return (
@@ -46,11 +34,6 @@ export function SkillPath({ units, completedLessons, upcoming = [] }: SkillPathP
           </li>
         );
       })}
-      {upcoming.map((u, j) => (
-        <li key={u.id} style={offset(units.length + j)}>
-          <UnitNode title={u.title} emoji={u.emoji} progress={0} state="locked" href="/" />
-        </li>
-      ))}
     </ol>
   );
 }

@@ -1,11 +1,12 @@
 import type { ContentBundle, Lesson, Phrase, Unit, Word } from "./types";
 import greetings from "@/content/greetings.json";
+import everydayFarsi from "@/content/everyday-farsi.json";
 
 /**
  * All content bundles, in path order. To add a unit, import its JSON and
  * append it here: that is the only change needed.
  */
-const BUNDLES: ContentBundle[] = [greetings as ContentBundle];
+const BUNDLES: ContentBundle[] = [greetings as ContentBundle, everydayFarsi as ContentBundle];
 
 export type Item = Word | Phrase;
 

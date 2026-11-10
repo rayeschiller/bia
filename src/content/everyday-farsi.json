@@ -1,0 +1,330 @@
+{
+  "words": [
+    {"id": "family-mom", "fa": "مامان", "translit": "mâmân", "en": "mom", "register": "colloquial"},
+    {"id": "family-dad", "fa": "بابا", "translit": "bâbâ", "en": "dad", "register": "colloquial"},
+    {"id": "family-sister", "fa": "خواهر", "translit": "khâhar", "en": "sister", "register": "both"},
+    {"id": "family-brother", "fa": "برادر", "translit": "barâdar", "en": "brother", "register": "both"},
+    {"id": "family-this", "fa": "این", "translit": "in", "en": "this", "register": "both"},
+    {"id": "family-is-my-sister", "fa": "خواهرمه", "translit": "khâharame", "en": "is my sister", "register": "colloquial"},
+    {"id": "family-daughter", "fa": "دختر", "translit": "dokhtar", "en": "daughter", "register": "both"},
+    {"id": "family-son", "fa": "پسر", "translit": "pesar", "en": "son", "register": "both"},
+    {"id": "family-aunt-maternal", "fa": "خاله", "translit": "khâle", "en": "aunt on your mother's side", "register": "both"},
+    {"id": "family-uncle-paternal", "fa": "عمو", "translit": "amu", "en": "uncle on your father's side", "register": "both"},
+    {"id": "family-is-my-uncle", "fa": "عمومه", "translit": "amume", "en": "is my uncle", "register": "colloquial"},
+    {"id": "food-bread", "fa": "نون", "translit": "nun", "en": "bread", "register": "colloquial"},
+    {"id": "food-rice", "fa": "برنج", "translit": "berenj", "en": "rice", "register": "both"},
+    {"id": "food-cheese", "fa": "پنیر", "translit": "panir", "en": "cheese", "register": "both"},
+    {"id": "food-chicken", "fa": "مرغ", "translit": "morgh", "en": "chicken", "register": "both"},
+    {"id": "food-and", "fa": "و", "translit": "o", "en": "and (spoken)", "register": "colloquial", "note": "In everyday speech, the conjunction is often pronounced o."},
+    {"id": "food-apple", "fa": "سیب", "translit": "sib", "en": "apple", "register": "both"},
+    {"id": "food-pomegranate", "fa": "انار", "translit": "anâr", "en": "pomegranate", "register": "both"},
+    {"id": "food-tea", "fa": "چای", "translit": "chây", "en": "tea", "register": "both"},
+    {"id": "food-water", "fa": "آب", "translit": "âb", "en": "water", "register": "both"},
+    {"id": "food-please-food", "fa": "لطفاً", "translit": "lotfan", "en": "please", "register": "both"},
+    {"id": "numbers-one", "fa": "یک", "translit": "yek", "en": "one", "register": "both"},
+    {"id": "numbers-two", "fa": "دو", "translit": "do", "en": "two", "register": "both"},
+    {"id": "numbers-three", "fa": "سه", "translit": "se", "en": "three", "register": "both"},
+    {"id": "numbers-four", "fa": "چهار", "translit": "chahâr", "en": "four", "register": "both"},
+    {"id": "numbers-counter", "fa": "تا", "translit": "tâ", "en": "a counter for things", "register": "colloquial", "note": "In conversation, tâ often follows a number when you are counting things."},
+    {"id": "numbers-five", "fa": "پنج", "translit": "panj", "en": "five", "register": "both"},
+    {"id": "numbers-six", "fa": "شش", "translit": "shesh", "en": "six", "register": "both"},
+    {"id": "numbers-seven", "fa": "هفت", "translit": "haft", "en": "seven", "register": "both"},
+    {"id": "numbers-eight", "fa": "هشت", "translit": "hasht", "en": "eight", "register": "both"},
+    {"id": "numbers-nine", "fa": "نه", "translit": "noh", "en": "nine", "register": "both"},
+    {"id": "numbers-ten", "fa": "ده", "translit": "dah", "en": "ten", "register": "both"},
+    {"id": "at-the-table-plate", "fa": "بشقاب", "translit": "boshghâb", "en": "plate", "register": "both"},
+    {"id": "at-the-table-bowl", "fa": "کاسه", "translit": "kâse", "en": "bowl", "register": "both"},
+    {"id": "at-the-table-spoon", "fa": "قاشق", "translit": "ghâshogh", "en": "spoon", "register": "both"},
+    {"id": "at-the-table-fork", "fa": "چنگال", "translit": "changâl", "en": "fork", "register": "both"},
+    {"id": "at-the-table-and-table", "fa": "و", "translit": "o", "en": "and (spoken)", "register": "colloquial"},
+    {"id": "at-the-table-breakfast", "fa": "صبحانه", "translit": "sobhâne", "en": "breakfast", "register": "both"},
+    {"id": "at-the-table-lunch", "fa": "ناهار", "translit": "nâhâr", "en": "lunch", "register": "both"},
+    {"id": "at-the-table-dinner", "fa": "شام", "translit": "shâm", "en": "dinner", "register": "both"},
+    {"id": "at-the-table-glass", "fa": "لیوان", "translit": "livân", "en": "drinking glass", "register": "both"},
+    {"id": "at-the-table-is-ready", "fa": "حاضره", "translit": "hâzere", "en": "is ready", "register": "colloquial"},
+    {"id": "feelings-im-happy", "fa": "خوشحالم", "translit": "khoshhâlam", "en": "I'm happy", "register": "both"},
+    {"id": "feelings-im-sad", "fa": "ناراحتم", "translit": "nârâhatam", "en": "I'm sad", "register": "both"},
+    {"id": "feelings-im-tired", "fa": "خسته‌ام", "translit": "khasteam", "en": "I'm tired", "register": "both"},
+    {"id": "feelings-im-worried", "fa": "نگرانم", "translit": "negarânam", "en": "I'm worried", "register": "both"},
+    {"id": "feelings-very", "fa": "خیلی", "translit": "kheyli", "en": "very", "register": "both"},
+    {"id": "feelings-im-hungry", "fa": "گرسنمه", "translit": "gorosname", "en": "I'm hungry", "register": "colloquial"},
+    {"id": "feelings-im-thirsty", "fa": "تشنمه", "translit": "teshname", "en": "I'm thirsty", "register": "colloquial"},
+    {"id": "feelings-im-scared", "fa": "می‌ترسم", "translit": "mitarsam", "en": "I'm scared", "register": "both"},
+    {"id": "feelings-im-bored", "fa": "حوصله‌م سر رفته", "translit": "hoselem sar rafte", "en": "I'm bored", "register": "colloquial"},
+    {"id": "feelings-a-little", "fa": "یه کم", "translit": "ye kam", "en": "a little", "register": "colloquial"},
+    {"id": "celebrations-birthday", "fa": "تولد", "translit": "tavallod", "en": "birthday", "register": "both"},
+    {"id": "celebrations-cake", "fa": "کیک", "translit": "keyk", "en": "cake", "register": "both"},
+    {"id": "celebrations-candle", "fa": "شمع", "translit": "sham'", "en": "candle", "register": "both"},
+    {"id": "celebrations-gift", "fa": "کادو", "translit": "kâdo", "en": "gift", "register": "colloquial"},
+    {"id": "celebrations-your-birthday", "fa": "تولدت", "translit": "tavallodet", "en": "your birthday (informal)", "register": "both"},
+    {"id": "celebrations-happy-occasion", "fa": "مبارک", "translit": "mobârak", "en": "happy (for an occasion)", "register": "both"},
+    {"id": "celebrations-nowruz", "fa": "نوروز", "translit": "nowruz", "en": "Persian New Year", "register": "both"},
+    {"id": "celebrations-yalda", "fa": "یلدا", "translit": "yaldâ", "en": "Yalda", "register": "both", "note": "Yalda is celebrated on the longest night of the year."},
+    {"id": "celebrations-sabzeh", "fa": "سبزه", "translit": "sabze", "en": "sprouted greens for Nowruz", "register": "both", "note": "These sprouts are one of the traditional items on a Haft-Sin table."},
+    {"id": "celebrations-haft-sin", "fa": "هفت‌سین", "translit": "haft-sin", "en": "Nowruz table of seven items beginning with sin", "register": "both"}
+  ],
+  "phrases": [
+    {"id": "family-meet-my-sister", "fa": "این خواهرمه", "translit": "in khâharame", "en": "This is my sister.", "wordIds": ["family-this", "family-is-my-sister"], "register": "colloquial"},
+    {"id": "family-meet-my-uncle", "fa": "این عمومه", "translit": "in amume", "en": "This is my uncle.", "wordIds": ["family-this", "family-is-my-uncle"], "register": "colloquial"},
+    {"id": "food-bread-and-cheese", "fa": "نون و پنیر", "translit": "nun o panir", "en": "Bread and cheese", "wordIds": ["food-bread", "food-and", "food-cheese"], "register": "colloquial"},
+    {"id": "food-tea-please", "fa": "چای لطفاً", "translit": "chây lotfan", "en": "Tea, please.", "wordIds": ["food-tea", "food-please-food"], "register": "both"},
+    {"id": "numbers-two-of-them", "fa": "دو تا", "translit": "do tâ", "en": "Two of them", "wordIds": ["numbers-two", "numbers-counter"], "register": "colloquial"},
+    {"id": "numbers-five-of-them", "fa": "پنج تا", "translit": "panj tâ", "en": "Five of them", "wordIds": ["numbers-five", "numbers-counter"], "register": "colloquial"},
+    {"id": "at-the-table-spoon-and-fork", "fa": "قاشق و چنگال", "translit": "ghâshogh o changâl", "en": "A spoon and fork", "wordIds": ["at-the-table-spoon", "at-the-table-and-table", "at-the-table-fork"], "register": "colloquial"},
+    {"id": "at-the-table-dinner-is-ready", "fa": "شام حاضره", "translit": "shâm hâzere", "en": "Dinner is ready.", "wordIds": ["at-the-table-dinner", "at-the-table-is-ready"], "register": "colloquial"},
+    {"id": "feelings-im-very-tired", "fa": "خیلی خسته‌ام", "translit": "kheyli khasteam", "en": "I'm very tired.", "wordIds": ["feelings-very", "feelings-im-tired"], "register": "both"},
+    {"id": "feelings-im-a-little-hungry", "fa": "یه کم گرسنمه", "translit": "ye kam gorosname", "en": "I'm a little hungry.", "wordIds": ["feelings-a-little", "feelings-im-hungry"], "register": "colloquial"},
+    {"id": "celebrations-happy-birthday", "fa": "تولدت مبارک", "translit": "tavallodet mobârak", "en": "Happy birthday!", "wordIds": ["celebrations-your-birthday", "celebrations-happy-occasion"], "register": "both"},
+    {"id": "celebrations-happy-nowruz", "fa": "نوروز مبارک", "translit": "nowruz mobârak", "en": "Happy Nowruz!", "wordIds": ["celebrations-nowruz", "celebrations-happy-occasion"], "register": "both"}
+  ],
+  "units": [
+    {
+      "id": "family",
+      "title": "Family",
+      "emoji": "👨‍👩‍👧",
+      "lessons": [
+        {
+          "id": "family-1",
+          "title": "Parents & siblings",
+          "newItemIds": ["family-mom", "family-dad", "family-sister", "family-brother", "family-meet-my-sister"],
+          "exercises": [
+            {"id": "family-1-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-mom", "distractorIds": ["family-dad", "family-sister", "family-brother"]},
+            {"id": "family-1-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-dad", "distractorIds": ["family-sister", "family-brother", "family-mom"]},
+            {"id": "family-1-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-sister", "distractorIds": ["family-brother", "family-mom", "family-dad"]},
+            {"id": "family-1-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-brother", "distractorIds": ["family-mom", "family-dad", "family-sister"]},
+            {"id": "family-1-ex-5", "type": "match_pairs", "pairIds": ["family-mom", "family-dad", "family-sister", "family-brother"]},
+            {"id": "family-1-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-meet-my-sister", "distractorIds": ["family-meet-my-uncle", "food-bread-and-cheese"]},
+            {"id": "family-1-ex-7", "type": "listen_choose", "itemId": "family-dad", "distractorIds": ["family-mom", "family-sister", "family-brother"]},
+            {"id": "family-1-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "family-sister"},
+            {"id": "family-1-ex-9", "type": "build_sentence", "itemId": "family-meet-my-sister", "distractorIds": ["family-mom", "family-dad"]},
+            {"id": "family-1-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "family-meet-my-sister", "distractorIds": ["family-meet-my-uncle", "food-bread-and-cheese"]}
+          ]
+        },
+        {
+          "id": "family-2",
+          "title": "Kids & relatives",
+          "newItemIds": ["family-daughter", "family-son", "family-aunt-maternal", "family-uncle-paternal", "family-meet-my-uncle"],
+          "exercises": [
+            {"id": "family-2-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-daughter", "distractorIds": ["family-son", "family-aunt-maternal", "family-uncle-paternal"]},
+            {"id": "family-2-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-son", "distractorIds": ["family-aunt-maternal", "family-uncle-paternal", "family-daughter"]},
+            {"id": "family-2-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-aunt-maternal", "distractorIds": ["family-uncle-paternal", "family-daughter", "family-son"]},
+            {"id": "family-2-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-uncle-paternal", "distractorIds": ["family-daughter", "family-son", "family-aunt-maternal"]},
+            {"id": "family-2-ex-5", "type": "match_pairs", "pairIds": ["family-daughter", "family-son", "family-aunt-maternal", "family-uncle-paternal"]},
+            {"id": "family-2-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "family-meet-my-uncle", "distractorIds": ["family-meet-my-sister", "food-tea-please"]},
+            {"id": "family-2-ex-7", "type": "listen_choose", "itemId": "family-son", "distractorIds": ["family-daughter", "family-aunt-maternal", "family-uncle-paternal"]},
+            {"id": "family-2-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "family-aunt-maternal"},
+            {"id": "family-2-ex-9", "type": "build_sentence", "itemId": "family-meet-my-uncle", "distractorIds": ["family-daughter", "family-son"]},
+            {"id": "family-2-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "family-meet-my-uncle", "distractorIds": ["family-meet-my-sister", "food-tea-please"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Food",
+      "emoji": "🍚",
+      "lessons": [
+        {
+          "id": "food-1",
+          "title": "Everyday foods",
+          "newItemIds": ["food-bread", "food-rice", "food-cheese", "food-chicken", "food-bread-and-cheese"],
+          "exercises": [
+            {"id": "food-1-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-bread", "distractorIds": ["food-rice", "food-cheese", "food-chicken"]},
+            {"id": "food-1-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-rice", "distractorIds": ["food-cheese", "food-chicken", "food-bread"]},
+            {"id": "food-1-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-cheese", "distractorIds": ["food-chicken", "food-bread", "food-rice"]},
+            {"id": "food-1-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-chicken", "distractorIds": ["food-bread", "food-rice", "food-cheese"]},
+            {"id": "food-1-ex-5", "type": "match_pairs", "pairIds": ["food-bread", "food-rice", "food-cheese", "food-chicken"]},
+            {"id": "food-1-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-bread-and-cheese", "distractorIds": ["food-tea-please", "numbers-two-of-them"]},
+            {"id": "food-1-ex-7", "type": "listen_choose", "itemId": "food-rice", "distractorIds": ["food-bread", "food-cheese", "food-chicken"]},
+            {"id": "food-1-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "food-cheese"},
+            {"id": "food-1-ex-9", "type": "build_sentence", "itemId": "food-bread-and-cheese", "distractorIds": ["food-rice", "food-chicken"]},
+            {"id": "food-1-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "food-bread-and-cheese", "distractorIds": ["food-tea-please", "numbers-two-of-them"]}
+          ]
+        },
+        {
+          "id": "food-2",
+          "title": "Fruit & drinks",
+          "newItemIds": ["food-apple", "food-pomegranate", "food-tea", "food-water", "food-tea-please"],
+          "exercises": [
+            {"id": "food-2-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-apple", "distractorIds": ["food-pomegranate", "food-tea", "food-water"]},
+            {"id": "food-2-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-pomegranate", "distractorIds": ["food-tea", "food-water", "food-apple"]},
+            {"id": "food-2-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-tea", "distractorIds": ["food-water", "food-apple", "food-pomegranate"]},
+            {"id": "food-2-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-water", "distractorIds": ["food-apple", "food-pomegranate", "food-tea"]},
+            {"id": "food-2-ex-5", "type": "match_pairs", "pairIds": ["food-apple", "food-pomegranate", "food-tea", "food-water"]},
+            {"id": "food-2-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "food-tea-please", "distractorIds": ["food-bread-and-cheese", "numbers-five-of-them"]},
+            {"id": "food-2-ex-7", "type": "listen_choose", "itemId": "food-pomegranate", "distractorIds": ["food-apple", "food-tea", "food-water"]},
+            {"id": "food-2-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "food-tea"},
+            {"id": "food-2-ex-9", "type": "build_sentence", "itemId": "food-tea-please", "distractorIds": ["food-apple", "food-pomegranate"]},
+            {"id": "food-2-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "food-tea-please", "distractorIds": ["food-bread-and-cheese", "numbers-five-of-them"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers",
+      "emoji": "🔢",
+      "lessons": [
+        {
+          "id": "numbers-1",
+          "title": "One to four",
+          "newItemIds": ["numbers-one", "numbers-two", "numbers-three", "numbers-four", "numbers-two-of-them"],
+          "exercises": [
+            {"id": "numbers-1-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-one", "distractorIds": ["numbers-two", "numbers-three", "numbers-four"]},
+            {"id": "numbers-1-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-two", "distractorIds": ["numbers-three", "numbers-four", "numbers-one"]},
+            {"id": "numbers-1-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-three", "distractorIds": ["numbers-four", "numbers-one", "numbers-two"]},
+            {"id": "numbers-1-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-four", "distractorIds": ["numbers-one", "numbers-two", "numbers-three"]},
+            {"id": "numbers-1-ex-5", "type": "match_pairs", "pairIds": ["numbers-one", "numbers-two", "numbers-three", "numbers-four"]},
+            {"id": "numbers-1-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-two-of-them", "distractorIds": ["numbers-five-of-them", "at-the-table-spoon-and-fork"]},
+            {"id": "numbers-1-ex-7", "type": "listen_choose", "itemId": "numbers-two", "distractorIds": ["numbers-one", "numbers-three", "numbers-four"]},
+            {"id": "numbers-1-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "numbers-three"},
+            {"id": "numbers-1-ex-9", "type": "build_sentence", "itemId": "numbers-two-of-them", "distractorIds": ["numbers-one", "numbers-three"]},
+            {"id": "numbers-1-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "numbers-two-of-them", "distractorIds": ["numbers-five-of-them", "at-the-table-spoon-and-fork"]}
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Five to ten",
+          "newItemIds": ["numbers-five", "numbers-six", "numbers-seven", "numbers-eight", "numbers-nine", "numbers-ten", "numbers-five-of-them"],
+          "exercises": [
+            {"id": "numbers-2-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-five", "distractorIds": ["numbers-six", "numbers-seven", "numbers-eight"]},
+            {"id": "numbers-2-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-six", "distractorIds": ["numbers-seven", "numbers-eight", "numbers-nine"]},
+            {"id": "numbers-2-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-seven", "distractorIds": ["numbers-eight", "numbers-nine", "numbers-ten"]},
+            {"id": "numbers-2-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-eight", "distractorIds": ["numbers-nine", "numbers-ten", "numbers-five"]},
+            {"id": "numbers-2-ex-5", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-nine", "distractorIds": ["numbers-ten", "numbers-five", "numbers-six"]},
+            {"id": "numbers-2-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-ten", "distractorIds": ["numbers-five", "numbers-six", "numbers-seven"]},
+            {"id": "numbers-2-ex-7", "type": "match_pairs", "pairIds": ["numbers-six", "numbers-seven", "numbers-eight", "numbers-nine", "numbers-ten"]},
+            {"id": "numbers-2-ex-8", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "numbers-five-of-them", "distractorIds": ["numbers-two-of-them", "at-the-table-dinner-is-ready"]},
+            {"id": "numbers-2-ex-9", "type": "listen_choose", "itemId": "numbers-six", "distractorIds": ["numbers-five", "numbers-seven", "numbers-eight"]},
+            {"id": "numbers-2-ex-10", "type": "type_translit", "direction": "en_to_fa", "itemId": "numbers-seven"},
+            {"id": "numbers-2-ex-11", "type": "build_sentence", "itemId": "numbers-five-of-them", "distractorIds": ["numbers-six", "numbers-seven"]},
+            {"id": "numbers-2-ex-12", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "numbers-five-of-them", "distractorIds": ["numbers-two-of-them", "at-the-table-dinner-is-ready"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at-the-table",
+      "title": "At the Table",
+      "emoji": "🫖",
+      "lessons": [
+        {
+          "id": "at-the-table-1",
+          "title": "Dishes & utensils",
+          "newItemIds": ["at-the-table-plate", "at-the-table-bowl", "at-the-table-spoon", "at-the-table-fork", "at-the-table-spoon-and-fork"],
+          "exercises": [
+            {"id": "at-the-table-1-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-plate", "distractorIds": ["at-the-table-bowl", "at-the-table-spoon", "at-the-table-fork"]},
+            {"id": "at-the-table-1-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-bowl", "distractorIds": ["at-the-table-spoon", "at-the-table-fork", "at-the-table-plate"]},
+            {"id": "at-the-table-1-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-spoon", "distractorIds": ["at-the-table-fork", "at-the-table-plate", "at-the-table-bowl"]},
+            {"id": "at-the-table-1-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-fork", "distractorIds": ["at-the-table-plate", "at-the-table-bowl", "at-the-table-spoon"]},
+            {"id": "at-the-table-1-ex-5", "type": "match_pairs", "pairIds": ["at-the-table-plate", "at-the-table-bowl", "at-the-table-spoon", "at-the-table-fork"]},
+            {"id": "at-the-table-1-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-spoon-and-fork", "distractorIds": ["at-the-table-dinner-is-ready", "feelings-im-very-tired"]},
+            {"id": "at-the-table-1-ex-7", "type": "listen_choose", "itemId": "at-the-table-bowl", "distractorIds": ["at-the-table-plate", "at-the-table-spoon", "at-the-table-fork"]},
+            {"id": "at-the-table-1-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "at-the-table-spoon"},
+            {"id": "at-the-table-1-ex-9", "type": "build_sentence", "itemId": "at-the-table-spoon-and-fork", "distractorIds": ["at-the-table-plate", "at-the-table-bowl"]},
+            {"id": "at-the-table-1-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "at-the-table-spoon-and-fork", "distractorIds": ["at-the-table-dinner-is-ready", "feelings-im-very-tired"]}
+          ]
+        },
+        {
+          "id": "at-the-table-2",
+          "title": "At a meal",
+          "newItemIds": ["at-the-table-breakfast", "at-the-table-lunch", "at-the-table-dinner", "at-the-table-glass", "at-the-table-dinner-is-ready"],
+          "exercises": [
+            {"id": "at-the-table-2-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-breakfast", "distractorIds": ["at-the-table-lunch", "at-the-table-dinner", "at-the-table-glass"]},
+            {"id": "at-the-table-2-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-lunch", "distractorIds": ["at-the-table-dinner", "at-the-table-glass", "at-the-table-breakfast"]},
+            {"id": "at-the-table-2-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-dinner", "distractorIds": ["at-the-table-glass", "at-the-table-breakfast", "at-the-table-lunch"]},
+            {"id": "at-the-table-2-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-glass", "distractorIds": ["at-the-table-breakfast", "at-the-table-lunch", "at-the-table-dinner"]},
+            {"id": "at-the-table-2-ex-5", "type": "match_pairs", "pairIds": ["at-the-table-breakfast", "at-the-table-lunch", "at-the-table-dinner", "at-the-table-glass"]},
+            {"id": "at-the-table-2-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "at-the-table-dinner-is-ready", "distractorIds": ["at-the-table-spoon-and-fork", "feelings-im-a-little-hungry"]},
+            {"id": "at-the-table-2-ex-7", "type": "listen_choose", "itemId": "at-the-table-lunch", "distractorIds": ["at-the-table-breakfast", "at-the-table-dinner", "at-the-table-glass"]},
+            {"id": "at-the-table-2-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "at-the-table-dinner"},
+            {"id": "at-the-table-2-ex-9", "type": "build_sentence", "itemId": "at-the-table-dinner-is-ready", "distractorIds": ["at-the-table-breakfast", "at-the-table-lunch"]},
+            {"id": "at-the-table-2-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "at-the-table-dinner-is-ready", "distractorIds": ["at-the-table-spoon-and-fork", "feelings-im-a-little-hungry"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feelings",
+      "title": "Feelings",
+      "emoji": "💛",
+      "lessons": [
+        {
+          "id": "feelings-1",
+          "title": "How I'm feeling",
+          "newItemIds": ["feelings-im-happy", "feelings-im-sad", "feelings-im-tired", "feelings-im-worried", "feelings-im-very-tired"],
+          "exercises": [
+            {"id": "feelings-1-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-happy", "distractorIds": ["feelings-im-sad", "feelings-im-tired", "feelings-im-worried"]},
+            {"id": "feelings-1-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-sad", "distractorIds": ["feelings-im-tired", "feelings-im-worried", "feelings-im-happy"]},
+            {"id": "feelings-1-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-tired", "distractorIds": ["feelings-im-worried", "feelings-im-happy", "feelings-im-sad"]},
+            {"id": "feelings-1-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-worried", "distractorIds": ["feelings-im-happy", "feelings-im-sad", "feelings-im-tired"]},
+            {"id": "feelings-1-ex-5", "type": "match_pairs", "pairIds": ["feelings-im-happy", "feelings-im-sad", "feelings-im-tired", "feelings-im-worried"]},
+            {"id": "feelings-1-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-very-tired", "distractorIds": ["feelings-im-a-little-hungry", "celebrations-happy-birthday"]},
+            {"id": "feelings-1-ex-7", "type": "listen_choose", "itemId": "feelings-im-sad", "distractorIds": ["feelings-im-happy", "feelings-im-tired", "feelings-im-worried"]},
+            {"id": "feelings-1-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "feelings-im-tired"},
+            {"id": "feelings-1-ex-9", "type": "build_sentence", "itemId": "feelings-im-very-tired", "distractorIds": ["feelings-im-happy", "feelings-im-sad"]},
+            {"id": "feelings-1-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "feelings-im-very-tired", "distractorIds": ["feelings-im-a-little-hungry", "celebrations-happy-birthday"]}
+          ]
+        },
+        {
+          "id": "feelings-2",
+          "title": "What I need",
+          "newItemIds": ["feelings-im-hungry", "feelings-im-thirsty", "feelings-im-scared", "feelings-im-bored", "feelings-im-a-little-hungry"],
+          "exercises": [
+            {"id": "feelings-2-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-hungry", "distractorIds": ["feelings-im-thirsty", "feelings-im-scared", "feelings-im-bored"]},
+            {"id": "feelings-2-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-thirsty", "distractorIds": ["feelings-im-scared", "feelings-im-bored", "feelings-im-hungry"]},
+            {"id": "feelings-2-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-scared", "distractorIds": ["feelings-im-bored", "feelings-im-hungry", "feelings-im-thirsty"]},
+            {"id": "feelings-2-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-bored", "distractorIds": ["feelings-im-hungry", "feelings-im-thirsty", "feelings-im-scared"]},
+            {"id": "feelings-2-ex-5", "type": "match_pairs", "pairIds": ["feelings-im-hungry", "feelings-im-thirsty", "feelings-im-scared", "feelings-im-bored"]},
+            {"id": "feelings-2-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "feelings-im-a-little-hungry", "distractorIds": ["feelings-im-very-tired", "celebrations-happy-nowruz"]},
+            {"id": "feelings-2-ex-7", "type": "listen_choose", "itemId": "feelings-im-thirsty", "distractorIds": ["feelings-im-hungry", "feelings-im-scared", "feelings-im-bored"]},
+            {"id": "feelings-2-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "feelings-im-scared"},
+            {"id": "feelings-2-ex-9", "type": "build_sentence", "itemId": "feelings-im-a-little-hungry", "distractorIds": ["feelings-im-thirsty", "feelings-im-scared"]},
+            {"id": "feelings-2-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "feelings-im-a-little-hungry", "distractorIds": ["feelings-im-very-tired", "celebrations-happy-nowruz"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "celebrations",
+      "title": "Celebrations",
+      "emoji": "🎉",
+      "lessons": [
+        {
+          "id": "celebrations-1",
+          "title": "Birthdays",
+          "newItemIds": ["celebrations-birthday", "celebrations-cake", "celebrations-candle", "celebrations-gift", "celebrations-happy-birthday"],
+          "exercises": [
+            {"id": "celebrations-1-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-birthday", "distractorIds": ["celebrations-cake", "celebrations-candle", "celebrations-gift"]},
+            {"id": "celebrations-1-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-cake", "distractorIds": ["celebrations-candle", "celebrations-gift", "celebrations-birthday"]},
+            {"id": "celebrations-1-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-candle", "distractorIds": ["celebrations-gift", "celebrations-birthday", "celebrations-cake"]},
+            {"id": "celebrations-1-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-gift", "distractorIds": ["celebrations-birthday", "celebrations-cake", "celebrations-candle"]},
+            {"id": "celebrations-1-ex-5", "type": "match_pairs", "pairIds": ["celebrations-birthday", "celebrations-cake", "celebrations-candle", "celebrations-gift"]},
+            {"id": "celebrations-1-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-happy-birthday", "distractorIds": ["celebrations-happy-nowruz", "family-meet-my-sister"]},
+            {"id": "celebrations-1-ex-7", "type": "listen_choose", "itemId": "celebrations-cake", "distractorIds": ["celebrations-birthday", "celebrations-candle", "celebrations-gift"]},
+            {"id": "celebrations-1-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "celebrations-candle"},
+            {"id": "celebrations-1-ex-9", "type": "build_sentence", "itemId": "celebrations-happy-birthday", "distractorIds": ["celebrations-birthday", "celebrations-cake"]},
+            {"id": "celebrations-1-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "celebrations-happy-birthday", "distractorIds": ["celebrations-happy-nowruz", "family-meet-my-sister"]}
+          ]
+        },
+        {
+          "id": "celebrations-2",
+          "title": "Nowruz & Yalda",
+          "newItemIds": ["celebrations-nowruz", "celebrations-yalda", "celebrations-sabzeh", "celebrations-haft-sin", "celebrations-happy-nowruz"],
+          "exercises": [
+            {"id": "celebrations-2-ex-1", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-nowruz", "distractorIds": ["celebrations-yalda", "celebrations-sabzeh", "celebrations-haft-sin"]},
+            {"id": "celebrations-2-ex-2", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-yalda", "distractorIds": ["celebrations-sabzeh", "celebrations-haft-sin", "celebrations-nowruz"]},
+            {"id": "celebrations-2-ex-3", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-sabzeh", "distractorIds": ["celebrations-haft-sin", "celebrations-nowruz", "celebrations-yalda"]},
+            {"id": "celebrations-2-ex-4", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-haft-sin", "distractorIds": ["celebrations-nowruz", "celebrations-yalda", "celebrations-sabzeh"]},
+            {"id": "celebrations-2-ex-5", "type": "match_pairs", "pairIds": ["celebrations-nowruz", "celebrations-yalda", "celebrations-sabzeh", "celebrations-haft-sin"]},
+            {"id": "celebrations-2-ex-6", "type": "multiple_choice", "direction": "fa_to_en", "itemId": "celebrations-happy-nowruz", "distractorIds": ["celebrations-happy-birthday", "family-meet-my-uncle"]},
+            {"id": "celebrations-2-ex-7", "type": "listen_choose", "itemId": "celebrations-yalda", "distractorIds": ["celebrations-nowruz", "celebrations-sabzeh", "celebrations-haft-sin"]},
+            {"id": "celebrations-2-ex-8", "type": "type_translit", "direction": "en_to_fa", "itemId": "celebrations-sabzeh"},
+            {"id": "celebrations-2-ex-9", "type": "build_sentence", "itemId": "celebrations-happy-nowruz", "distractorIds": ["celebrations-yalda", "celebrations-sabzeh"]},
+            {"id": "celebrations-2-ex-10", "type": "multiple_choice", "direction": "en_to_fa", "itemId": "celebrations-happy-nowruz", "distractorIds": ["celebrations-happy-birthday", "family-meet-my-uncle"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

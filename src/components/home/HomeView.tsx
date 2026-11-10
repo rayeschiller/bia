@@ -1,7 +1,7 @@
 "use client";
 
 import { getUnits } from "@/lib/content";
-import { UPCOMING_UNITS } from "@/lib/mock";
+import { firstIncompleteUnit } from "@/lib/lesson";
 import { useProgress } from "@/lib/progress";
 import { currentStreak, todayLocal } from "@/lib/progress/core";
 import { ReviewButton } from "./ReviewButton";
@@ -13,7 +13,7 @@ export function HomeView() {
   const { progress, dueReviewItemIds } = useProgress();
   const units = getUnits();
   const done = new Set(progress.completedLessons);
-  const firstIncomplete = units.findIndex((u) => u.lessons.some((l) => !done.has(l.id)));
+  const firstIncomplete = firstIncompleteUnit(units, done);
   const currentIndex = firstIncomplete === -1 ? units.length - 1 : firstIncomplete;
   const current = units[currentIndex];
   const nextLesson = current.lessons.find((l) => !done.has(l.id));
@@ -30,7 +30,7 @@ export function HomeView() {
           </p>
         </section>
 
-        <SkillPath units={units} completedLessons={progress.completedLessons} upcoming={UPCOMING_UNITS} />
+        <SkillPath units={units} completedLessons={progress.completedLessons} />
 
         <ReviewButton dueCount={dueReviewItemIds(Infinity).length} />
       </main>

@@ -1,4 +1,15 @@
-import type { Exercise, Lesson } from "./types";
+import type { Exercise, Lesson, Unit } from "./types";
+
+export type UnitState = "done" | "current" | "locked";
+
+export function firstIncompleteUnit(units: Unit[], completed: ReadonlySet<string>): number {
+  return units.findIndex((unit) => unit.lessons.some((lesson) => !completed.has(lesson.id)));
+}
+
+export function unitState(unit: Unit, completed: ReadonlySet<string>, isCurrent: boolean): UnitState {
+  if (unit.lessons.every((lesson) => completed.has(lesson.id))) return "done";
+  return isCurrent ? "current" : "locked";
+}
 
 /** A lesson in progress: a queue that grows when an answer is wrong. */
 export interface LessonRun {
